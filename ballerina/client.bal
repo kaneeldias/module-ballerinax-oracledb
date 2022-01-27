@@ -146,7 +146,7 @@ public type Options record {|
 # + user - Name of a user of the Oracle database server
 # + database - System identifier or the service name of the database
 # + password - The password of the Oracle database server for the provided username
-# + options - Oracle database connection properties
+# + options - Oracle database-specific connection properties
 # + connectionPool - The `sql:ConnectionPool` record to be used within the database client. If there is no
 #                    connectionPool provided, the global connection pool will be used
 type ClientConfiguration record {|

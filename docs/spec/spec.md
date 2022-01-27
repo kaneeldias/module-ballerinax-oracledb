@@ -104,7 +104,7 @@ operation. This will close the corresponding connection pool if it is not shared
    ```ballerina
    # Closes the OracleDB client and shuts down the connection pool.
    #
-   # + return - Possible error when closing the client
+   # + return - `()` or an `sql:Error`
    public isolated function close() returns Error?;
    ```
 

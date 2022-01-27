@@ -246,7 +246,7 @@ sql:ExecutionResult result = check dbClient->execute(`INSERT INTO student(age, n
 ```
 
 In this sample, the parameter values, which are assigned to local variables are used to parameterize the SQL query in
-the `execute` remote function. This type of a parameterized SQL query can be used with any primitive Ballerina type
+the `execute` remote function. This type of parameterized SQL query can be used with any primitive Ballerina type
 such as `string`, `int`, `float`, or `boolean` and in that case, the corresponding SQL type of the parameter is derived
 from the type of the Ballerina variable that is passed in.
 
@@ -302,7 +302,7 @@ First, a type is created to represent the returned result set. This record can b
 according to the requirement. If an open record is defined, the returned stream type will include both defined fields
 in the record and additional database columns fetched by the SQL query which are not defined in the record.
 Note the mapping of the database column to the returned record's property is case-insensitive if it is defined in the
-record(i.e., the `ID` column in the result can be mapped to the `id` property in the record). Additional column names
+record (i.e., the `ID` column in the result can be mapped to the `id` property in the record). Additional column names
 added to the returned record as in the SQL query. If the record is defined as a closed record, only defined fields in the
 record are returned or gives an error when additional columns present in the SQL query. Next, the `SELECT` query is executed
 via the `query` remote function of the client. Once the query is executed, each data record can be retrieved by iterating through
